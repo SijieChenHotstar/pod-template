@@ -93,7 +93,7 @@ module Pod
       customise_prefix
       rename_classes_folder
       ensure_carthage_compatibility
-      #reinitialize_git_repo
+      reinitialize_git_repo
       run_pod_install
 
       @message_bank.farewell_message
@@ -183,8 +183,8 @@ module Pod
 
     def reinitialize_git_repo
       `rm -rf .git`
-      `git init`
-      `git add -A`
+      #`git init`
+      #`git add -A`
     end
 
     def validate_user_details
