@@ -1,0 +1,7 @@
+disabled_rules: # rule identifiers to exclude from running
+  # - colon
+  - trailing_whitespace
+  # - control_statement
+
+excluded:
+  - "Example/Pods"
