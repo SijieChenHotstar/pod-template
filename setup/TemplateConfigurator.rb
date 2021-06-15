@@ -95,7 +95,8 @@ module Pod
       ensure_carthage_compatibility
       reinitialize_git_repo
       run_pod_install
-
+      `rm -rf _Pods.xcodeproj`
+      
       @message_bank.farewell_message
     end
 
