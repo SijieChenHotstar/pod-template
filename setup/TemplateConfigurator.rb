@@ -125,7 +125,7 @@ module Pod
     end
 
     def replace_variables_in_files
-      file_names = ['POD_LICENSE', 'POD_README.md', 'NAME.podspec', podfile_path] #'.travis.yml'
+      file_names = ['POD_LICENSE', 'POD_README.md', 'NAME.podspec', '.github/workflows/unitTests.yml', podfile_path] #'.travis.yml'
       file_names.each do |file_name|
         text = File.read(file_name)
         text.gsub!("${POD_NAME}", @pod_name)
